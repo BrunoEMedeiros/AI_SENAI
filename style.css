@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Inter', sans-serif;    
+    text-rendering: optimizeLegibility;
+    color: #272727;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-size: 62.5%;
 }
 
 .container{
@@ -9,14 +23,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
+
+    gap: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+input{
+    border: none;
+    border-bottom: 0.1rem solid #272727;
+
+    padding: 1.2rem 1.5rem;
+    
+    min-width: 40rem;
+
+    margin-bottom: 2rem;
+
+    font-size: 1.5rem;
+
+    outline: none;
 }
 
 button{
-    padding: 12px 15px;
+    padding: 1rem 1.2rem;
+
     border-radius: 50%;
     border: none;
+
     background-color: #dd203c;
+
     color: #fff;
+
     cursor: pointer;
 }
+
+.fas{
+    font-size: 1.8rem;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: #272727;
+}
+
+.barra_lateral{
+    width: 6rem;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-color: #dd203c;
+}
+
